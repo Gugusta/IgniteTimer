@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useState } from 'react'
+import React, { createContext, useState } from 'react'
 
 interface Cycle {
   id: string
@@ -26,7 +26,7 @@ interface CyclesContextTYpe {
 }
 
 interface CycleContextsProviderProps {
-  children: ReactNode
+  children: React.ReactNode | React.ReactNode[]
 }
 export const CyclesContexts = createContext({} as CyclesContextTYpe)
 
